@@ -21,6 +21,7 @@ Listed below are the technologies used to make this app possible
 | Name | Link | Description |
 | ------ | ------ | ------ |
 | ReactJS | [https://reactjs.org/](https://reactjs.org/) | Front-end Framework |
+| styled-components | [https://styled-components.com/docs](https://styled-components.com/docs) | Styling |
 
 
 
