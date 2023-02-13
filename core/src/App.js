@@ -1,25 +1,37 @@
-import logo from './logo.svg';
+// Package / Dependency Imports
+import styled from 'styled-components';
+// Local Imports
 import './App.css';
+import { devices } from './constants/devices';
 
-function App() {
+
+const App = () => {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container>
+      <Background src="/assets/images/noise_black_wave_solid.svg" alt="" />
+      3740 TOFU
+
+    </Container>
   );
-}
+};
+
+
+const Container = styled.div`
+  position: relative;
+  width: 100%;
+  inset: 0;
+  min-height: calc(100vh-70px);
+  overflow: hidden;
+`;
+
+const Background = styled.img`
+  z-index: -1;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+
+  
+`;
 
 export default App;
